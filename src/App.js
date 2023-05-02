@@ -17,16 +17,22 @@ function App() {
     <div className="App">
       <div className="hero">
         <ul>
-          <li onClick={() => scrollToSection(services)} className="link">
+          <li onClick={() => scrollToSection(services)} className="link"
+          id= "a">
             Services
           </li>
-          <li onClick={() => scrollToSection(about)} className="link">
+          <li onClick={() => scrollToSection(about)} className="link" id="b">
             About
           </li>
-          <li onClick={() => scrollToSection(contact)} className="link">
+          <li onClick={() => scrollToSection(contact)} className="link" id="c">
             Contact
           </li>
         </ul>
+      </div>
+      <div className="main">
+        <div>
+          <h1>Byte Buddies</h1>
+        </div>
       </div>
       <div ref={services} className="services">
         <div className="services-container">

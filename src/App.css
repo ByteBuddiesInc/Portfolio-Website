@@ -1,36 +1,49 @@
 .hero {
   position: fixed;
   top: 0;
-  right: 0;
+  text-align: right;
   width: 100%;
   background-color: transparent;
-  z-index: 1;
+  margin-right: 30px; /* add right margin */
 }
 
 .services,
 .about,
-.contact {
+.contact,
+.main {
   height: 100vh; /* Set the height to 100% of the viewport height */
 }
+
+.services {
+  background-color: red;
+}
+
 .link {
   text-decoration: none;
   display: inline;
   padding: 10px 10px;
   font-weight: 700;
-  font-size: 13;
   font-size: large;
   cursor: pointer;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  margin-right: 20px;
+  position: relative; /* Add position:relative to allow for absolute positioning of the underline */
+  align-items: right;
+}
+
+#a,#b {
+  font-size: 17px;
 }
 
 
+#c {
+  margin-right: 40px;
+  font-size: 17px;
+}
+
+.main {
+  background-color: black;
+}
 
 .link::after {
-  right: 0;
   content: "";
   position: absolute;
   bottom: 0;
@@ -42,7 +55,6 @@
 }
 
 .link:hover::after {
-  right: 0;
   width: 100%; /* Change the width to 100% on hover to show the underline */
 }
 
