@@ -1,28 +1,58 @@
 .hero {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
-  background-color: #ffffff;
+  background-color: transparent;
   z-index: 1;
-  margin-bottom: 100px;
-}
-.services {
-  height: 600px;
-  background-color: black;
-}
-.blog {
-  height: 600px;
-}
-.contact {
-  height: 600px;
 }
 
+.services,
+.about,
+.contact {
+  height: 100vh; /* Set the height to 100% of the viewport height */
+}
 .link {
   text-decoration: none;
   display: inline;
-  padding: 20px 20px;
+  padding: 10px 10px;
   font-weight: 700;
+  font-size: 13;
   font-size: large;
   cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 20px;
+}
+
+
+
+.link::after {
+  right: 0;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: width 0.3s ease; /* Add a transition effect to the width property */
+}
+
+.link:hover::after {
+  right: 0;
+  width: 100%; /* Change the width to 100% on hover to show the underline */
+}
+
+.services-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.services-text {
+  font-size: 4rem;
 }

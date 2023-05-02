@@ -3,7 +3,7 @@ import "./App.css";
 
 function App() {
   const services = useRef(null);
-  const blog = useRef(null);
+  const about = useRef(null);
   const contact = useRef(null);
 
   const scrollToSection = (elementRef) => {
@@ -20,8 +20,8 @@ function App() {
           <li onClick={() => scrollToSection(services)} className="link">
             Services
           </li>
-          <li onClick={() => scrollToSection(blog)} className="link">
-            Blog
+          <li onClick={() => scrollToSection(about)} className="link">
+            About
           </li>
           <li onClick={() => scrollToSection(contact)} className="link">
             Contact
@@ -29,10 +29,13 @@ function App() {
         </ul>
       </div>
       <div ref={services} className="services">
-        <h3>Services</h3>
+        <div className="services-container">
+          <h1 className="services-text">Byte Buddies</h1>
+        </div>
       </div>
-      <div ref={blog} className="blog">
-        <h3>Blog</h3>
+
+      <div ref={about} className="about">
+        <h3>About</h3>
       </div>
       <div ref={contact} className="contact">
         <h3>Contact</h3>
