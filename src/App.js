@@ -5,6 +5,7 @@ function App() {
   const services = useRef(null);
   const about = useRef(null);
   const contact = useRef(null);
+  const main = useRef(null);
 
   const scrollToSection = (elementRef) => {
     window.scrollTo({
@@ -29,11 +30,16 @@ function App() {
           </li>
         </ul>
       </div>
-      <div className="main">
-        <div>
-          <h1>Byte Buddies</h1>
-        </div>
+
+      <div ref={main} className="main">
+          <div className="main-container">
+            <h1 className="main-text">Byte Buddies</h1>
+            <br />
+            <p>Hi! We're two freelance web developers based in Seattle. We work with entepeneurs, businesses, and nonprofits like you.</p>
+          </div>
+          
       </div>
+
       <div ref={services} className="services">
         <div className="services-container">
           <h1 className="services-text">Byte Buddies</h1>
@@ -41,8 +47,12 @@ function App() {
       </div>
 
       <div ref={about} className="about">
-        <h3>About</h3>
-      </div>
+  <div className="about-text">
+    <h3>About Us</h3>
+    <p>Our company was founded by two college students who are passionate about web development and helping businesses succeed online. We believe in building strong, long-lasting relationships with our clients and delivering high-quality work that exceeds their expectations at competitive rates.</p>
+  </div>
+</div>
+
       <div ref={contact} className="contact">
         <h3>Contact</h3>
       </div>
