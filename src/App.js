@@ -33,16 +33,16 @@ function App() {
 
       <div ref={main} className="main">
           <div className="main-container">
-            <h1 className="main-text">Byte Buddies</h1>
+            <h1 className="main-text">Byte<br></br>Buddies</h1>
             <br />
-            <p>Hi! We're two freelance web developers based in Seattle. We work with entepeneurs, businesses, and nonprofits like you.</p>
+            <p style={{ fontSize: "28px" }}>Hi! We're two freelance web developers based in Seattle.<br></br>We work with entepeneurs, businesses, and nonprofits like you.</p>
           </div>
           
       </div>
 
       <div ref={services} className="services">
         <div className="services-container">
-          <h1 className="services-text">Byte Buddies</h1>
+          <h3 className="services-text">A good website goes a long way.</h3>
         </div>
       </div>
 

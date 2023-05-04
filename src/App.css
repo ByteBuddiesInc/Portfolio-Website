@@ -14,12 +14,9 @@
   height: 100vh; /* Set the height to 100% of the viewport height */
 }
 
-.main {
-  z-index: -1;
-}
-
 .services {
-  background-color: #74bf70;
+  margin-top: 100vh; /* add margin-top equal to viewport height */
+  background-color: #063523;
 }
 
 .link {
@@ -43,14 +40,25 @@
 }
 
 .main {
-  background-color: rgb(255, 255, 255);
+  position: fixed; /* set position to fixed */
+  top: 0; /* set top to 0 to keep it at the top */
+  z-index: -1; /* set z-index to a lower value than other sections */
+  text-align: left;
+  font-family: 'Source Code Pro';
+  background-color: #daebe9;
+  width: 100%; /* set width to 100% */
+  height: 100%; /* set height to 100% */
+  overflow: auto; /* enable scrolling if necessary */
 }
+
 
 .about {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to right, #063523 50%, #665d4e 50%);
 }
 
 .about-text {
@@ -84,11 +92,12 @@
 }
 
 .services-text {
-  font-size: 4rem;
+  font-size: 1rem;
 }
 
 .main-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100%;
@@ -102,10 +111,10 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  
 }
 
 .main-text {
   font-size: 4rem;
+  margin: 2px;
 }
-
-
