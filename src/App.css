@@ -45,7 +45,7 @@
   z-index: -1; /* set z-index to a lower value than other sections */
   text-align: left;
   font-family: 'Source Code Pro';
-  background-color: #daebe9;
+  background-color: #def3ff;
   width: 100%; /* set width to 100% */
   height: 100%; /* set height to 100% */
   overflow: auto; /* enable scrolling if necessary */
@@ -58,7 +58,7 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: linear-gradient(to right, #063523 50%, #665d4e 50%);
+  background: linear-gradient(to right, #858dde 50%, #665d4e 50%);
 }
 
 .about-text {

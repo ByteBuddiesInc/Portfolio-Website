@@ -33,8 +33,6 @@ function App() {
 
       <div ref={main} className="main">
           <div className="main-container">
-            <h1 className="main-text">Byte<br></br>Buddies</h1>
-            <br />
             <p style={{ fontSize: "28px" }}>Hi! We're two freelance web developers based in Seattle.<br></br>We work with entepeneurs, businesses, and nonprofits like you.</p>
           </div>
           
