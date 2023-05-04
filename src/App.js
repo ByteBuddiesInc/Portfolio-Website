@@ -18,7 +18,7 @@ function App() {
     <div className="App">
       <div className="hero">
         <ul>
-        <li onClick={() => scrollToSection(main)} id="logo" className="link">
+          <li onClick={() => scrollToSection(main) } id="logo">
             BYTE BUDDIES
           </li>
           <li onClick={() => scrollToSection(services)} className="link"
@@ -36,7 +36,7 @@ function App() {
 
       <div ref={main} className="main">
           <div className="main-container">
-            <p style={{ fontSize: "28px" }}>Hi! We're two freelance web developers based in Seattle.<br></br>We work with entepeneurs, businesses, and nonprofits like you.</p>
+            <p style={{ fontSize: "28px" }}>Hi! We're two freelance web developers based in Seattle.<br></br>We work with entrepeneurs, businesses, and nonprofits like you.</p>
           </div>
           
       </div>
@@ -46,6 +46,29 @@ function App() {
           <h3 className="services-text">A good website goes a long way.</h3>
         </div>
       </div>
+
+      <div class="services">
+        <div class="box box1">
+          <h2>Box 1</h2>
+          <p>Text goes here</p>
+        </div>
+        <div class="box box2">
+          <h2>Box 2</h2>
+          <p>Text goes here</p>
+        </div>
+        <div class="box box3">
+          <h2>Box 3</h2>
+          <p>Text goes here</p>
+        </div>
+        <div class="box box4">
+          <h2>Box 4</h2>
+          <p>Text goes here</p>
+        </div>
+      </div>
+
+
+
+
 
       <div ref={about} className="about">
   <div className="about-text">
