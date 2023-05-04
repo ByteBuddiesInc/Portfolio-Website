@@ -18,11 +18,11 @@ function App() {
     <div className="App">
       <div className="hero">
         <ul>
-          <li onClick={() => scrollToSection(main) } id="logo">
+          <li onClick={() => scrollToSection(main)} id="logo">
             BYTE BUDDIES
           </li>
           <li onClick={() => scrollToSection(services)} className="link"
-          id= "a">
+            id="a">
             Services
           </li>
           <li onClick={() => scrollToSection(about)} className="link" id="b">
@@ -35,42 +35,36 @@ function App() {
       </div>
 
       <div ref={main} className="main">
-          <div className="main-container">
-            <p style={{ fontSize: "28px" }}>Hi! We're two freelance web developers based in Seattle.<br></br>We work with entrepeneurs, businesses, and nonprofits like you.</p>
-          </div>
-          
+        <div className="main-container">
+          <p style={{ fontSize: "28px" }}>Hi! We're two freelance web developers based in Seattle.<br></br>We work with entrepeneurs, businesses, and nonprofits like you.</p>
+        </div>
+
       </div>
 
       <div ref={services} className="services">
-      <div className="services-container">
-          <h3 className="services-text">A good website goes a long way.</h3>
-        </div>
-        <div class="box box1">
-          <h2>Box 1</h2>
-          <p>Text goes here</p>
-        </div>
-        <div class="box box2">
-          <h2>Box 2</h2>
-          <p>Text goes here</p>
-        </div>
-        <div class="box box3">
-          <h2>Box 3</h2>
-          <p>Text goes here</p>
-        </div>
-        <div class="box box4">
-          <h2>Box 4</h2>
-          <p>Text goes here</p>
+        <div className="services-container">
+          <div className="box box1">
+            <h2>88</h2>
+          </div>
+          <div className="box box2">
+            <h2>86</h2>
+          </div>
+          <div className="box box3">
+            <h2>36</h2>
+          </div>
+          <div className="box box4">
+            <h2>84</h2>
+          </div>
         </div>
       </div>
 
 
-
       <div ref={about} className="about">
-  <div className="about-text">
-    <h3>About Us</h3>
-    <p>Our company was founded by two college students who are passionate about web development and helping businesses succeed online. We believe in building strong, long-lasting relationships with our clients and delivering high-quality work that exceeds their expectations at competitive rates.</p>
-  </div>
-</div>
+        <div className="about-text">
+          <h3>About Us</h3>
+          <p>Our company was founded by two college students who are passionate about web development and helping businesses succeed online. We believe in building strong, long-lasting relationships with our clients and delivering high-quality work that exceeds their expectations at competitive rates.</p>
+        </div>
+      </div>
 
       <div ref={contact} className="contact">
         <h3>Contact</h3>
