@@ -42,12 +42,9 @@ function App() {
       </div>
 
       <div ref={services} className="services">
-        <div className="services-container">
+      <div className="services-container">
           <h3 className="services-text">A good website goes a long way.</h3>
         </div>
-      </div>
-
-      <div class="services">
         <div class="box box1">
           <h2>Box 1</h2>
           <p>Text goes here</p>
@@ -65,8 +62,6 @@ function App() {
           <p>Text goes here</p>
         </div>
       </div>
-
-
 
 
 
