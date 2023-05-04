@@ -68,6 +68,11 @@
   padding-right: 50px;
 }
 
+#logo {
+  float: left;
+  display: inline-block;
+  cursor: pointer;
+}
 
 .link::after {
   content: "";

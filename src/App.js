@@ -18,6 +18,9 @@ function App() {
     <div className="App">
       <div className="hero">
         <ul>
+        <li onClick={() => scrollToSection(main)} id="logo" className="link">
+            BYTE BUDDIES
+          </li>
           <li onClick={() => scrollToSection(services)} className="link"
           id= "a">
             Services
