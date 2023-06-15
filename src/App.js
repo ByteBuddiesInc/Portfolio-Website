@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import "./App.css";
+import myImage from './edward.png'
 
 function App() {
   const services = useRef(null);
@@ -36,13 +37,35 @@ function App() {
 
       <div ref={main} className="main">
         <div className="main-container">
-          <p style={{ fontSize: "28px" }}>Hi! We're two freelance web developers based in Seattle.<br></br>We work with entrepeneurs, businesses, and nonprofits like you.</p>
+
+          <p style={{ fontSize: "28px" }}>Hey there! We're Edward and Evan, a duo of freelance web developers from Seattle.<br></br>We work with entrepeneurs, businesses, and nonprofits like <strong>you</strong>.</p>
+            <img
+               src={myImage} 
+               alt="Profile"
+              style={{
+                borderRadius: '50%',
+                border: '2px solid white', 
+                width: '200px', 
+                height: '200px', 
+              }}
+            />
         </div>
 
       </div>
 
       <div ref={services} className="services">
-    
+        <h1 className="page-title">Services</h1>
+        <div className="services-container">
+          <p className="services-left">Web Design</p>
+        </div>
+
+        <div className="services-container">
+          <p>Data Base Management</p>
+        </div>
+
+        <div className="services-container">
+          <p className="services-right">Maintenance</p>
+        </div>
       </div>
 
 
