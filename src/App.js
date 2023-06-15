@@ -42,20 +42,7 @@ function App() {
       </div>
 
       <div ref={services} className="services">
-        <div className="services-container">
-          <div className="box box1">
-            <h2>88</h2>
-          </div>
-          <div className="box box2">
-            <h2>86</h2>
-          </div>
-          <div className="box box3">
-            <h2>36</h2>
-          </div>
-          <div className="box box4">
-            <h2>84</h2>
-          </div>
-        </div>
+    
       </div>
 
 
@@ -67,7 +54,8 @@ function App() {
       </div>
 
       <div ref={contact} className="contact">
-        <h3>Contact</h3>
+        <h2 className="contact-text">Let's Connect!</h2>
+        <h1 className="contact-text">elee714@uw.edu</h1>
       </div>
     </div>
   );
