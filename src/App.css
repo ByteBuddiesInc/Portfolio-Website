@@ -1,4 +1,5 @@
 .hero {
+  color:salmon;
   position: fixed;
   top: 0;
   text-align: right;
@@ -7,77 +8,99 @@
   margin-right: 30px; /* add right margin */
 }
 
-.services,
 .about,
+.projects,
 .contact,
 .main {
   height: 100vh; /* Set the height to 100% of the viewport height */
-  background-color: #bcd2ff;
+  background-color: rgba(238,238,238,255);
+  color: #444444;
 }
 
-.services {
+.about {
+  text-align: right;
   display: flex;
-}
-
-
-.services-container {
-  height: 100vh; /* Use viewport height for full height */
-  display: flex;
-  flex-direction: row;
-  justify-content: center; /* Add this line to center the boxes horizontally */
-  padding: 5px;
-  margin-left: auto;
-  font-size: 50px;
-}
-
-.services-left,
-.services-right {
-  flex: 1; /* Add this line to distribute remaining space equally */
-  display: flex;
-  justify-content: center;
-}
-
-.services-left {
-  justify-content: flex-start;
-}
-
-.services-right {
-  justify-content: flex-end;
 }
 
 .page-title {
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .profile-container {
-  margin-top: 15%;
+  font-family: 'Source Code Pro', Menlo, Monaco, Consolas, 'Courier New', monospace;
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 20px; /* Add margin between images and text */
+  padding-top: 10%;
+}
+
+.email-content:hover {
+  background-color: salmon;
 }
 
 .profile-image {
-  width: 190px;
-  height: 190px;
-  border-radius: 50%;
-  border: 2px solid white;
+  background-color: #bcd2ff;
+  font-family: 'Source Code Pro', Menlo, Monaco, Consolas, 'Courier New', monospace;
+  width: 200px;
+  height: 200px;
+  border: 5px solid white;
   overflow: hidden;
-  margin-bottom: 10px; /* Add margin between the images */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .profile-img {
-  width: 100%;
+  width: 250px; 
   height: 100%;
   object-fit: cover;
   object-position: center 1%;
-  background-color: salmon;
+  background-color: #bcd2ff;
+}
+
+.filler-text {
+  font-size: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+.about-container {
+  height: 70vh; /* Set the height to 70% of the viewport height */
+  display: flex;
+  flex-direction: column;
+  font-size: 50px;
+  padding-left: 7%;
+  text-align: left;
+  justify-content: flex-start;
+}
+
+
+
+#comma {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-size: 30px; /* Adjust the font size as per your preference */
 }
 
 .main-text-container {
   text-align: center;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  padding-left: 100px;
+  padding-top: 10px; /* Adjust the top padding as per your preference */
+  padding-bottom: 10px; /* Adjust the bottom padding as per your preference */
 }
-
 
 
 .link {
@@ -90,7 +113,7 @@
   align-items: right;
 }
 
-#a,#b {
+#a, #b {
   font-size: 17px;
 }
 
@@ -108,31 +131,49 @@
   overflow: auto; /* enable scrolling if necessary */
 }
 
-
-.about {
+.projects {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
 }
 
-.about-text {
+.projects-text {
   font-size: 2rem;
   max-width: 50%;
   text-align: right;
   padding-right: 50px;
 }
 
-.contact-text {
-  left: 50%;
-  top: 50%;
-  transform: translate(50%, 50%);
-  max-width: 50%;
+.contact-text, .contact-smaller {
   font-size: 60px;
-  margin-bottom: 20px; /* Add spacing between the headers */
+  text-align: center;
 }
 
+.contact-smaller {
+  padding-top: 20%;
+  font-size: 45px;
+}
+
+.small-text {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-size: 20px; /* Adjust the font size as per your preference */
+}
+
+.email-button {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.email-content {
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: bold;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  background-color: #bcd2ff;
+}
 
 #logo {
   float: left;
@@ -144,6 +185,7 @@
 }
 
 .link::after {
+  color: black;
   content: "";
   position: absolute;
   bottom: 0;
@@ -154,11 +196,16 @@
   transition: width 0.3s ease; /* Add a transition effect to the width property */
 }
 
+.link:hover {
+  color: black;
+}
+
 .link:hover::after {
+  color: black;
   width: 100%; /* Change the width to 100% on hover to show the underline */
 }
 
-.services-text {
+.about-text {
   font-size: 1rem;
 }
 
@@ -168,10 +215,10 @@
   align-items: center;
   justify-content: center;
   height: 100%;
-  text-align: center; /* add this property */
+  text-align: center;
 }
 
 .main-text {
-  font-size: 4rem;
-  margin: 2px;
+  font-size: 70px;
+  text-align: left;
 }
