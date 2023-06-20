@@ -68,6 +68,7 @@ function App() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis elit eget nisi blandit, sed commodo est fringilla. Sed vel tortor sit amet enim scelerisque feugiat. Ut eleifend, lorem non viverra hendrerit, eros lectus auctor ipsum, vel viverra est urna id nisi.
             </div>
           </div>
+
           <div className="profile-image">
             <img src={evanPhoto} alt="Profile" className="profile-img" />
             <div className="filler-text">
@@ -77,11 +78,8 @@ function App() {
         </div>
       </div>
 
-
-
-
       <div ref={projects} className="projects">
-
+        <h1>Project!</h1>
       </div>
 
       <div ref={contact} className="contact">
